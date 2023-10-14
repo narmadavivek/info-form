@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link href="test.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="test.js"></script>
+    <form id="form">
+
+    <h1 id="title">ENTER DETAILS</h1>
+    <p id="description">Please fill out the form below with your details. All the fields are mandatory.</p>
+    <div class="form-group">
+       <div class="form-group">
+        <label for="first-name">first name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="first-name" required>
+       </div>
+        <div class="form-group">
+        <label for="last-name">last name</label>
+        <input  id="last-name" name="last-name" placeholder="last-name" required><br>
+   </div>
+   <div class="form-group" >
+    
+        <label for="email">email</label>
+        <input type="text" id="email" name="email" min = "1" max = "50" placeholder="email@gmail.com" autocomplete="off" required><br>
+   </div>
+   <div class="form-group">
+        <label for="address">address</label><br>
+        <textarea type="text" id="address" name="address" placeholder="location" required></textarea><br>
+   </div>
+    <div>
+        <label for="pincode">pincode</label>
+        <input type="text" id="pincode" name="pincode" placeholder="pincode" required><br>
+   </div>
+   <div class="form-group gender">     
+    
+    <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>male
+        <input type="radio" id="female" name="gender" value="female" required>female<br>
+   </div>
+    <div class="form-group">
+        <label for="food" id="items">Choose at least 2 food:</label>
+
+        <select name="food" multiple required>
+        <option value="chinese">chinese</option>
+        <option value="indian">indian</option>
+        <option value="thai">thai</option>
+        <option value="mexican">mexican</option>
+        <option value="korean">korean</option>
+        </select><br>
+    </div>
+    <div class="form-group">
+        <label for="state">state</label>
+        <input type="text" id="state" name="state" placeholder="state" required><br>
+     </div>
+     <div class="form-group">
+        <label for="country">country</label>
+        <input type="text" id="country" name="country" placeholder="country" required><br>
+     </div>
+    
+     <button type="submit" id="submit" class=" btn btn-primary">submit</button>
+    
+    
+    </div>
+    <div class="show">
+<table id="mytable" class="table">
+    <thead>
+    <tr>
+        <th>first-name</th>
+        <th>last-name</th>
+        <th>address</th>
+        <th>pincode</th>
+        <th>gender</th>
+        <th>food</th>
+        <th>state</th>
+        <th>country</th>
+    </tr>
+</thead>
+<tbody>
+  
+</tbody>
+
+
+</table>
+</div>
+</form>
+</body>
+</html>
